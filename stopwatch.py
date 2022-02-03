@@ -7,13 +7,13 @@ def show(hours, minutes, seconds):
 
 def run():
     status = int(input(
-        "Hola ¿Cómo estas? Presiona 1: para iniciar el cronometro. Presiona 2: Para detenerlo."))
+        "Coloca 1: iniciar el cronometro. Presiona ctr + c : Para detenerlo -> "))
 
     seconds = 0
     minutes = 0 
     hours = 0
 
-    while status == 1 or hours <= 60:
+    while status == 1 and hours <= 60:
         seconds += 1
         show(hours, minutes, seconds)
         sleep(1)
